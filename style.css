@@ -142,3 +142,18 @@ main {
   font-weight: 900;
   margin-top: 10px;
 }
+/*Skills finished*/
+
+/*Projects*/
+#projects {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+}
