@@ -162,6 +162,7 @@ main {
 .projects__project {
   position: relative;
   flex: 1;
+  cursor: pointer;
 }
 
 .projects__project-img {
@@ -177,16 +178,34 @@ main {
   color: #fff;
   bottom: 20px;
   left: 10px;
-  cursor: pointer;
 }
+
+.projects__project.active .dropdown-button {
+  bottom: 73%;
+}
+
 .dropdown-button img {
   width: 18px;
   height: 18px;
   display: inline-block;
 }
 
-.hidden {
+.dropdown {
+  position: absolute;
+  top: 30%;
+  left: 33px;
+  width: 87%;
+  color: #fff;
+  transition: 0.2s;
   display: none;
+}
+.dropdown h3 {
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.projects__project.active .dropdown {
+  display: block;
 }
 
 .overlay {
@@ -201,4 +220,13 @@ main {
   height: 100%;
   bottom: 0;
   top: 0;
+  transition: background 0.3s;
+}
+
+.projects__project.active .overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.65) 80%,
+    rgba(1, 1, 11, 0) 100%
+  );
 }
