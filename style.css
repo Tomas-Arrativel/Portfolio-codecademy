@@ -203,6 +203,9 @@ main {
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
+.dropdown p {
+  margin-bottom: 1rem;
+}
 
 .projects__project.active .dropdown {
   display: block;
@@ -229,4 +232,12 @@ main {
     rgba(0, 0, 0, 0.65) 80%,
     rgba(1, 1, 11, 0) 100%
   );
+}
+
+.project__btn {
+  background-color: var(--orange-red);
+  border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 2rem;
 }
