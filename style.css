@@ -307,6 +307,12 @@ main {
   text-decoration: none;
   padding: 5px 2rem;
 }
+
+@media (max-width: 1000px) {
+  .projects {
+    flex-direction: column;
+  }
+}
 /*Finish of project section*/
 
 /*Contact section*/
