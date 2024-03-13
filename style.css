@@ -351,3 +351,9 @@ main {
 .contact__links-link img {
   width: 5rem;
 }
+
+@media (max-width: 675px) {
+  .contact__links {
+    justify-content: center;
+  }
+}
